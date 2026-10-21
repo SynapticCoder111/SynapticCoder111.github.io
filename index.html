@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prince Kumar — B.Tech CSE Student at Gurukula Kangri University, Haridwar. Aspiring Software Engineer targeting SDE placements and web development internships. Portfolio showcasing projects, skills, and DSA preparation." />
+  <title>Prince Kumar — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Prince<span>.</span></a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#dsa">DSA</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/resume.pdf" class="nav-cta" download="Prince_Kumar_Resume.pdf">Resume</a></li>
+      </ul>
+
+      <!-- Hamburger (mobile) -->
+      <button
+        class="nav-hamburger"
+        id="nav-hamburger"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-mobile"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav drawer -->
+  <div class="nav-mobile" id="nav-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#dsa">DSA &amp; Problem Solving</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section id="hero" aria-label="Introduction">
+
+    <!-- Background orbs -->
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="hero-badge" aria-label="Status">
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          Open to internships &amp; SDE roles · Class of 2027
+        </div>
+
+        <p class="hero-greeting">Hi, I'm</p>
+
+        <h1 class="hero-name">
+          <span class="hero-name-highlight">Prince Kumar</span>
+        </h1>
+
+        <div class="hero-role-wrapper" aria-live="polite">
+          <span class="hero-role-prefix">I'm a&nbsp;</span>
+          <span id="typed-text" aria-label="Role description"></span>
+          <span class="typed-cursor" aria-hidden="true"></span>
+        </div>
+
+        <p class="hero-desc">
+          A Computer Science student passionate about building clean software,
+          solving algorithmic problems, and crafting web experiences.
+          Currently preparing for SDE placements and software engineering internships.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">
+            <!-- Arrow right icon (inline SVG) -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+            View Projects
+          </a>
+          <!-- Hero download resume button -->
+          <a href="assets/resume.pdf" class="btn-secondary" download="Prince_Kumar_Resume.pdf">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download Resume
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <div class="scroll-mouse">
+        <div class="scroll-mouse-dot"></div>
+      </div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════ -->
+  <section id="about" aria-label="About me">
+    <div class="container">
+
+      <div class="about-grid">
+        <!-- Left: Avatar card -->
+        <div class="about-avatar-wrap reveal">
+          <div class="about-avatar-card">
+            <div class="avatar-container">
+              <img
+                src="assets/prince-kumar-profile.png"
+                alt="Portrait of Prince Kumar"
+                class="avatar-photo"
+                onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';"
+              />
+              <div id="avatar-fallback" class="avatar-initials" style="display:none;" aria-hidden="true">PK</div>
+            </div>
+            <div class="about-name">Prince Kumar</div>
+            <div class="about-role-tag">B.Tech · Computer Science</div>
+
+            <div class="about-quick-info">
+              <div class="quick-info-row">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+                Gurukula Kangri University
+              </div>
+              <div class="quick-info-row">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+                Graduating 2027
+              </div>
+              <div class="quick-info-row">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                Haridwar, Uttarakhand
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Bio -->
+        <div class="about-text">
+          <p class="section-label reveal">About me</p>
+          <h2 class="section-title reveal">
+            Building skills for<br />a career in software.
+          </h2>
+
+          <div class="reveal reveal-delay-1">
+            <p>
+              I'm <span class="about-highlight">Prince Kumar</span>, a B.Tech Computer
+              Science &amp; Engineering student at
+              <span class="about-highlight">Gurukula Kangri (Deemed to be University), Haridwar</span>,
+              graduating in 2027. I'm interested in software engineering, data structures
+              &amp; algorithms, problem-solving, and building practical web applications.
+            </p>
+            <p>
+              My academic focus sits at the intersection of strong CS fundamentals and
+              real-world coding practice. I consistently work on
+              <span class="about-highlight">DSA preparation</span> for SDE placements
+              while building projects that demonstrate what I can actually do — not just
+              what I've studied.
+            </p>
+            <p>
+              I value adaptability, teamwork, and self-driven learning. Currently I'm
+              sharpening my skills through coursework, personal projects, and
+              internship experience, with an eye on both SDE placements and web
+              development internship opportunities.
+            </p>
+          </div>
+
+          <!-- Target roles -->
+          <div class="about-targets">
+            <div class="target-card reveal reveal-delay-1">
+              <div class="target-icon">🎯</div>
+              <div class="target-title">SDE Placements</div>
+              <div class="target-desc">Targeting on-campus &amp; off-campus SDE roles for 2027 graduating batch.</div>
+            </div>
+            <div class="target-card reveal reveal-delay-2">
+              <div class="target-icon">🛠️</div>
+              <div class="target-title">Software Engineering Internships</div>
+              <div class="target-desc">Actively seeking summer &amp; semester internship opportunities.</div>
+            </div>
+            <div class="target-card reveal reveal-delay-3">
+              <div class="target-icon">🌐</div>
+              <div class="target-title">Web Development Roles</div>
+              <div class="target-desc">Open to frontend, backend, and full-stack web development positions.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════ -->
+  <section id="skills" aria-label="Technical skills">
+    <div class="container">
+
+      <div class="skills-header">
+        <p class="section-label reveal">Skills</p>
+        <h2 class="section-title reveal">What I work with</h2>
+        <p class="section-desc reveal reveal-delay-1">
+          Languages, tools, and concepts I've studied and applied in coursework,
+          projects, and internship experience. Items marked
+          <span style="color:var(--accent-violet)">◆</span> are technologies
+          I'm actively exploring through project work.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Programming Languages -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">💻</div>
+            <span class="skill-cat-title">Programming Languages</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Web Technologies -->
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🌐</div>
+            <span class="skill-cat-title">Web Technologies</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">Vanilla JS</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">CSS Flexbox / Grid</span>
+          </div>
+        </div>
+
+        <!-- Developer Tools -->
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🔧</div>
+            <span class="skill-cat-title">Developer Tools</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+
+        <!-- CS Fundamentals -->
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">📐</div>
+            <span class="skill-cat-title">CS Fundamentals</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Structures</span>
+            <span class="skill-tag">Algorithms</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">DBMS</span>
+            <span class="skill-tag">Operating Systems</span>
+            <span class="skill-tag">Computer Networks</span>
+          </div>
+        </div>
+
+        <!-- Soft Skills / Strengths -->
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🤝</div>
+            <span class="skill-cat-title">Strengths</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Adaptability</span>
+            <span class="skill-tag">Teamwork</span>
+            <span class="skill-tag">Self-Learning</span>
+            <span class="skill-tag">Problem-Solving</span>
+          </div>
+        </div>
+
+        <!-- Currently Learning / Project-based -->
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🚀</div>
+            <span class="skill-cat-title">Exploring via Projects</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag learning">React ◆</span>
+            <span class="skill-tag learning">Node.js ◆</span>
+            <span class="skill-tag learning">REST APIs ◆</span>
+            <span class="skill-tag learning">SQL ◆</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════════ -->
+  <section id="projects" aria-label="Featured projects">
+    <div class="container">
+
+      <div class="projects-header">
+        <p class="section-label reveal">Projects</p>
+        <h2 class="section-title reveal">Featured Work</h2>
+        <p class="section-desc reveal reveal-delay-1">
+          Projects I'm actively building and concepts I'm designing. No invented
+          metrics or links — honest statuses only.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Job Application Tracker -->
+        <article class="project-card reveal" aria-label="Job Application Tracker project">
+          <div class="project-card-top">
+            <div class="project-icon" aria-hidden="true">📋</div>
+            <span class="status-badge status-ready">
+              <span class="status-badge-dot" aria-hidden="true"></span>
+              Completed · Ready to Deploy
+            </span>
+          </div>
+
+          <div>
+            <h3 class="project-title">Job Application Tracker (CareerFlow)</h3>
+          </div>
+
+          <p class="project-desc">
+            A full-stack, authenticated job search management application built with Node.js,
+            Express, and MongoDB. Features an interactive Kanban pipeline, a 30-day interview
+            calendar, dedicated interview preparation checklists, and verified server-calculated metrics.
+          </p>
+
+          <div class="project-features">
+            <div class="project-feature"><strong>Implemented:</strong> Application tracking with full details (company, role, dates, status, salary, recruiter, notes)</div>
+            <div class="project-feature"><strong>Implemented:</strong> Kanban status pipeline with audit-logged timestamped status transitions</div>
+            <div class="project-feature"><strong>Implemented:</strong> Real-time dashboard summary metrics, activity tracking, and search/filtering</div>
+            <div class="project-feature"><strong>Implemented:</strong> 30-day interview calendar with deadline reminders, follow-up alerts, and overdue tracking</div>
+            <div class="project-feature"><strong>Implemented:</strong> Interview preparation workspace with round checklists, questions, and outcome tracking</div>
+            <div class="project-feature"><strong>Implemented:</strong> CSV import/export and JSON backup/restore for complete data portability</div>
+          </div>
+
+          <div class="project-tech-tags">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">JavaScript (ES Modules)</span>
+            <span class="tech-tag">REST API</span>
+          </div>
+
+          <div class="project-links">
+            <a
+              href="https://github.com/SynapticCoder111/careerflow-job-tracker"
+              class="project-link-btn available"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="View CareerFlow repository on GitHub"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              View Source Code
+            </a>
+            <span
+              class="project-link-btn"
+              title="Full-stack app tested locally with Node.js & MongoDB; not deployed to cloud hosting yet"
+              aria-disabled="true"
+            >
+              Not deployed yet
+            </span>
+          </div>
+        </article>
+
+        <!-- Project 2: AI Placement Prep & Skill Gap Analyzer -->
+        <article class="project-card reveal reveal-delay-1" aria-label="AI Placement Preparation project">
+          <div class="project-card-top">
+            <div class="project-icon" aria-hidden="true">🤖</div>
+            <span class="status-badge status-dev">
+              <span class="status-badge-dot" aria-hidden="true"></span>
+              In Development · Minor Project
+            </span>
+          </div>
+
+          <div>
+            <h3 class="project-title">AI Placement Preparation &amp; Skill Gap Analyzer</h3>
+          </div>
+
+          <p class="project-desc">
+            A B.Tech minor project being developed as a two-person team. The system
+            aims to compare a student's current skill set against the requirements of
+            their target job roles, then help them plan and prioritise their preparation
+            accordingly. Currently under active development.
+          </p>
+
+          <div class="project-features">
+            <div class="project-feature"><strong>Goal:</strong> Input a student skill profile and a target SDE/web role</div>
+            <div class="project-feature"><strong>Goal:</strong> Identify skill gaps between the student's profile and role requirements</div>
+            <div class="project-feature"><strong>Goal:</strong> Suggest a structured preparation plan to close identified gaps</div>
+            <div class="project-feature"><strong>Note:</strong> Feature set is still evolving; no functionality is claimed complete</div>
+          </div>
+
+          <div class="project-tech-tags">
+            <span class="tech-tag">In Development</span>
+            <span class="tech-tag">Team of 2</span>
+            <span class="tech-tag">Minor Project</span>
+          </div>
+
+          <div class="project-links">
+            <a
+              href="#"
+              class="project-link-btn"
+              aria-disabled="true"
+              title="Project under active development"
+              tabindex="-1"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              In Development
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       INTERNSHIP / EXPERIENCE
+  ═══════════════════════════════════════ -->
+  <section id="experience" aria-label="Internship and experience">
+    <div class="container">
+
+      <p class="section-label reveal">Experience</p>
+      <h2 class="section-title reveal">Internship</h2>
+      <p class="section-desc reveal reveal-delay-1" style="margin-bottom: var(--space-3xl);">
+        Hands-on experience gained through formal training and internship programmes.
+      </p>
+
+      <div class="education-timeline">
+        <div class="edu-card reveal reveal-delay-1">
+          <div class="edu-header">
+            <div>
+              <div class="edu-degree">Full Stack Web Development Intern</div>
+              <div class="edu-institution">BeeSkilled &nbsp;·&nbsp; Online</div>
+            </div>
+            <div class="edu-period">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              May 2026 – Jun 2026
+            </div>
+          </div>
+
+          <p class="edu-desc">
+            Completed a six-week online internship and training programme in full stack
+            web development with BeeSkilled. The programme covered both frontend and
+            backend fundamentals through structured learning and hands-on tasks,
+            providing practical exposure to web development workflows.
+          </p>
+
+          <div class="edu-courses-label">Focus Areas</div>
+          <div class="edu-courses">
+            <span class="course-tag">Full Stack Web Development</span>
+            <span class="course-tag">Frontend Development</span>
+            <span class="course-tag">Backend Fundamentals</span>
+            <span class="course-tag">Web Development Workflows</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       DSA & PROBLEM SOLVING
+  ═══════════════════════════════════════ -->
+  <section id="dsa" aria-label="DSA and problem solving">
+    <div class="container">
+
+      <div class="dsa-inner">
+        <!-- Left: Text -->
+        <div class="dsa-text">
+          <p class="section-label reveal">DSA &amp; Problem Solving</p>
+          <h2 class="section-title reveal">Sharpening the<br />fundamentals.</h2>
+
+          <div class="reveal reveal-delay-1">
+            <p>
+              Data Structures &amp; Algorithms are at the core of SDE placement
+              preparation. I practise consistently across competitive programming
+              platforms, focusing on building strong intuition across key topic areas.
+            </p>
+            <p>
+              The goal isn't just to pass interviews — it's to genuinely think
+              algorithmically and carry that clarity into every engineering decision.
+            </p>
+          </div>
+
+          <div class="dsa-focus-list reveal reveal-delay-2">
+            <div class="dsa-focus-item">
+              <span class="dsa-focus-num">01</span>
+              Arrays, Strings &amp; Hashing
+            </div>
+            <div class="dsa-focus-item">
+              <span class="dsa-focus-num">02</span>
+              Linked Lists, Stacks &amp; Queues
+            </div>
+            <div class="dsa-focus-item">
+              <span class="dsa-focus-num">03</span>
+              Trees, Graphs &amp; Traversals
+            </div>
+            <div class="dsa-focus-item">
+              <span class="dsa-focus-num">04</span>
+              Dynamic Programming
+            </div>
+            <div class="dsa-focus-item">
+              <span class="dsa-focus-num">05</span>
+              Recursion &amp; Backtracking
+            </div>
+            <div class="dsa-focus-item">
+              <span class="dsa-focus-num">06</span>
+              Sorting, Searching &amp; Greedy
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Platforms -->
+        <div class="reveal reveal-delay-2">
+          <p class="section-label">Platforms</p>
+          <div class="dsa-platforms">
+
+            <div class="platform-card">
+              <div class="platform-logo">🟡</div>
+              <div class="platform-name">LeetCode</div>
+              <!-- PLACEHOLDER: Add stats when ready. No invented numbers. -->
+              <div class="platform-note">Active practice</div>
+            </div>
+
+            <div class="platform-card">
+              <div class="platform-logo">🔵</div>
+              <div class="platform-name">Codeforces</div>
+              <div class="platform-note">Competitive programming</div>
+            </div>
+
+            <div class="platform-card">
+              <div class="platform-logo">🟢</div>
+              <div class="platform-name">GeeksforGeeks</div>
+              <div class="platform-note">Concept reference</div>
+            </div>
+
+            <div class="platform-card">
+              <div class="platform-logo">🟠</div>
+              <div class="platform-name">HackerRank</div>
+              <div class="platform-note">Practice challenges</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       EDUCATION
+  ═══════════════════════════════════════ -->
+  <section id="education" aria-label="Education">
+    <div class="container">
+
+      <p class="section-label reveal">Education</p>
+      <h2 class="section-title reveal">Academic Background</h2>
+      <p class="section-desc reveal reveal-delay-1" style="margin-bottom: var(--space-3xl);">
+        My formal CS education forms the foundation for everything I build and learn.
+      </p>
+
+      <div class="education-timeline">
+
+        <!-- B.Tech Card -->
+        <div class="edu-card reveal reveal-delay-1">
+          <div class="edu-header">
+            <div>
+              <div class="edu-degree">B.Tech — Computer Science &amp; Engineering</div>
+              <div class="edu-institution">Gurukula Kangri (Deemed to be University) · Haridwar, Uttarakhand</div>
+            </div>
+            <div class="edu-period">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              2023 – 2027 (Expected)
+            </div>
+          </div>
+
+          <div class="edu-cgpa-row">
+            <span class="cgpa-badge">
+              Overall CGPA &nbsp;<strong>7.84</strong>
+            </span>
+            <span class="cgpa-badge cgpa-highlight">
+              6th Sem CGPA &nbsp;<strong>8.28</strong>
+            </span>
+          </div>
+
+          <p class="edu-desc">
+            Four-year undergraduate programme with a focus on core CS fundamentals,
+            algorithms, software engineering principles, and applied computing.
+            Actively engaged in SDE placement preparation and self-directed project
+            work alongside coursework.
+          </p>
+
+          <div class="edu-courses-label">Relevant Coursework</div>
+          <div class="edu-courses">
+            <span class="course-tag">Data Structures &amp; Algorithms</span>
+            <span class="course-tag">Object-Oriented Programming</span>
+            <span class="course-tag">Database Management Systems</span>
+            <span class="course-tag">Operating Systems</span>
+            <span class="course-tag">Computer Networks</span>
+            <span class="course-tag">Discrete Mathematics</span>
+            <span class="course-tag">Software Engineering</span>
+            <span class="course-tag">Computer Architecture</span>
+            <span class="course-tag">Theory of Computation</span>
+            <span class="course-tag">Compiler Design</span>
+          </div>
+        </div>
+
+        <!-- Class XII -->
+        <div class="edu-card reveal reveal-delay-2">
+          <div class="edu-header">
+            <div>
+              <div class="edu-degree">Class XII — PCM (Physics, Chemistry, Mathematics)</div>
+              <div class="edu-institution">CBSE Board</div>
+            </div>
+            <div class="edu-period">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              2022
+            </div>
+          </div>
+          <div class="edu-cgpa-row">
+            <span class="cgpa-badge">Percentage &nbsp;<strong>77.4%</strong></span>
+          </div>
+        </div>
+
+        <!-- Class X -->
+        <div class="edu-card reveal reveal-delay-3">
+          <div class="edu-header">
+            <div>
+              <div class="edu-degree">Class X</div>
+              <div class="edu-institution">CBSE Board</div>
+            </div>
+            <div class="edu-period">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              2020
+            </div>
+          </div>
+          <div class="edu-cgpa-row">
+            <span class="cgpa-badge">Percentage &nbsp;<strong>85.6%</strong></span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CERTIFICATIONS
+  ═══════════════════════════════════════ -->
+  <section id="certifications" aria-label="Certifications and training">
+    <div class="container">
+
+      <p class="section-label reveal">Certifications</p>
+      <h2 class="section-title reveal">Credentials &amp; Training</h2>
+      <p class="section-desc reveal reveal-delay-1" style="margin-bottom: var(--space-3xl);">
+        Formal certifications and structured training programmes completed alongside coursework.
+      </p>
+
+      <div class="cert-grid reveal reveal-delay-2">
+
+        <div class="cert-card">
+          <div class="cert-icon" aria-hidden="true">☁️</div>
+          <div class="cert-body">
+            <div class="cert-title">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</div>
+            <div class="cert-issuer">Oracle</div>
+          </div>
+          <div class="cert-badge cert-badge-done">Certified</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon" aria-hidden="true">🐍</div>
+          <div class="cert-body">
+            <div class="cert-title">The Joy of Computing Using Python</div>
+            <div class="cert-issuer">NPTEL &nbsp;·&nbsp; Elite (65%)</div>
+          </div>
+          <div class="cert-badge cert-badge-done">Completed</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon" aria-hidden="true">🤖</div>
+          <div class="cert-body">
+            <div class="cert-title">AI &amp; ML Workshop</div>
+            <div class="cert-issuer">Sofcon India Pvt. Ltd.</div>
+          </div>
+          <div class="cert-badge cert-badge-done">Completed</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       RESUME
+  ═══════════════════════════════════════ -->
+  <section id="resume" aria-label="Resume download">
+    <div class="container">
+      <div class="resume-inner">
+        <div class="resume-icon" aria-hidden="true">📄</div>
+        <p class="section-label" style="justify-content:center;">Resume</p>
+        <h2 class="section-title">Want the full picture?</h2>
+        <p class="section-desc">
+          My resume covers my education, projects, skills, and everything else
+          in one concise document.
+        </p>
+
+        <div class="resume-cta-group">
+          <a href="assets/resume.pdf" class="btn-primary" download="Prince_Kumar_Resume.pdf">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download Resume
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            Get in Touch
+          </a>
+        </div>
+
+        <p class="resume-note" id="resume-status-note">
+          <!-- Updated dynamically by script.js based on whether assets/resume.pdf exists -->
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════ -->
+  <section id="contact" aria-label="Contact">
+    <div class="container">
+
+      <div class="contact-grid">
+        <!-- Left: Info -->
+        <div class="contact-info">
+          <p class="section-label reveal">Contact</p>
+          <h2 class="section-title reveal">Let's connect.</h2>
+          <p class="reveal reveal-delay-1">
+            Whether you have a role to discuss, a collaboration in mind, or
+            just want to say hello — I'd love to hear from you. I respond to
+            every message.
+          </p>
+
+          <div class="contact-links reveal reveal-delay-2">
+            <a href="mailto:prinsep97@gmail.com" class="contact-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              prinsep97@gmail.com
+              <span class="contact-link-label">Email</span>
+            </a>
+
+            <a href="https://linkedin.com/in/princekumar-cse" class="contact-link" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+              linkedin.com/in/princekumar-cse
+              <span class="contact-link-label">LinkedIn</span>
+            </a>
+
+            <a href="https://github.com/SynapticCoder111" class="contact-link" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              github.com/SynapticCoder111
+              <span class="contact-link-label">GitHub</span>
+            </a>
+
+            <a href="tel:+917905725590" class="contact-link contact-link-phone">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              +91 79057 25590
+              <span class="contact-link-label">Phone</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form reveal reveal-delay-1" role="form" aria-label="Contact form">
+          <!--
+            Form uses client-side JS validation then opens a mailto: link.
+            No backend or third-party endpoint required.
+            To switch to Formspree: set action="https://formspree.io/f/YOUR_FORM_ID" and remove e.preventDefault() in script.js.
+          -->
+          <form id="contact-form" action="" method="POST" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">
+                  Name <span aria-label="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Your name"
+                  autocomplete="name"
+                  required
+                />
+                <span class="form-error" id="name-error" role="alert">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">
+                  Email <span aria-label="required">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  class="form-input"
+                  placeholder="your@email.com"
+                  autocomplete="email"
+                  required
+                />
+                <span class="form-error" id="email-error" role="alert">Please enter a valid email.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject</label>
+              <input
+                type="text"
+                id="contact-subject"
+                name="subject"
+                class="form-input"
+                placeholder="e.g. Internship opportunity, Collaboration…"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">
+                Message <span aria-label="required">*</span>
+              </label>
+              <textarea
+                id="contact-message"
+                name="message"
+                class="form-textarea"
+                placeholder="Tell me what's on your mind…"
+                required
+              ></textarea>
+              <span class="form-error" id="message-error" role="alert">Please enter your message.</span>
+            </div>
+
+            <button type="submit" class="form-submit">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+              Send Message
+            </button>
+
+          </form>
+
+          <!-- Success message (shown after valid submit) -->
+          <div class="form-success" id="form-success" aria-live="polite">
+            <div class="form-success-icon">✅</div>
+            <div class="form-success-title">Message sent!</div>
+            <div class="form-success-msg">
+              Thanks for reaching out. I'll get back to you as soon as possible.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Prince<span>.</span></div>
+
+        <p class="footer-copy">
+          © <span id="footer-year"></span> Prince Kumar &nbsp;·&nbsp; Built with HTML · CSS · JS
+        </p>
+
+        <div class="footer-links">
+          <a href="https://github.com/SynapticCoder111" class="footer-link" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/princekumar-cse" class="footer-link" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="mailto:prinsep97@gmail.com" class="footer-link" aria-label="Send email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ─── SCROLL TO TOP ────────────────────── -->
+  <button id="scroll-top" aria-label="Scroll back to top" title="Scroll to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+      stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
