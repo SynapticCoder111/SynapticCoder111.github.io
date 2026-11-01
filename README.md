@@ -9,7 +9,7 @@ A premium, modern dark-themed personal portfolio website built with pure semanti
 - **Name:** Prince Kumar
 - **Role:** B.Tech Computer Science & Engineering (Batch of 2027)
 - **Institution:** Gurukula Kangri (Deemed to be University), Haridwar, Uttarakhand
-- **Academic Scores:** Overall CGPA: 7.84 | 6th Semester CGPA: 8.28 | Class XII (CBSE PCM): 77.4% | Class X (CBSE): 85.6%
+- **Academic Scores:** Overall CGPA: 7.84 | 6th Semester CGPA: 8.28
 - **Target Roles:** SDE Placements, Software Engineering Internships, Web Development
 - **Email:** [prinsep97@gmail.com](mailto:prinsep97@gmail.com)
 - **Phone:** +91 7905725590
@@ -65,11 +65,11 @@ Then navigate to: [http://localhost:3000](http://localhost:3000)
 3. **About** — Authentic introduction highlighting CS foundations, DSA focus, and target roles (SDE, Internships, Web Dev).
 4. **Skills** — Categorized into Programming Languages (C++, Python, JS), Web Technologies (HTML, CSS), Developer Tools (Git, GitHub, VS Code), Core CS Fundamentals, Strengths, and an exploratory project section.
 5. **Projects** —
-   - **Job Application Tracker (CareerFlow):** Completed and ready to deploy (Node.js, Express, MongoDB, JavaScript ES modules). Full-stack workspace for managing applications, pipelines, 30-day interview calendar, and analytics. Repository: [github.com/SynapticCoder111/careerflow-job-tracker](https://github.com/SynapticCoder111/careerflow-job-tracker)
-   - **AI Placement Preparation & Skill Gap Analyzer:** Academic minor project (team of 2, in development) focusing on role requirement mapping and preparation path recommendations.
+   - **PrepPilot — AI-Driven Placement & Skill Gap Analyzer:** Live full-stack platform (React, Node.js, Express, MongoDB, JWT, Tailwind CSS, AI API) for PDF resume parsing, dynamic skill-gap analysis, AI-generated study roadmaps, and mock interview prep. Deployed on Vercel and Render.
+   - **CareerFlow — Job Application Tracker:** Completed and ready to deploy (Node.js, Express, MongoDB, JavaScript ES modules). Full-stack workspace for managing applications, pipelines, 30-day interview calendar, and analytics. Repository: [github.com/SynapticCoder111/careerflow-job-tracker](https://github.com/SynapticCoder111/careerflow-job-tracker)
 6. **Experience** — BeeSkilled Full Stack Web Development Intern (6-week online internship/training program).
 7. **DSA & Problem Solving** — Structured topic roadmap and competitive programming platforms (LeetCode, Codeforces, GeeksforGeeks, HackerRank).
-8. **Education** — Full academic timeline with verified institutions, graduation year (2027), CGPA metrics (7.84 overall, 8.28 6th sem), and Class XII/X scores.
+8. **Education** — B.Tech Computer Science & Engineering (2023–2027), Gurukula Kangri (Deemed to be University), Haridwar, Uttarakhand (Overall CGPA: 7.84, 6th Sem CGPA: 8.28).
 9. **Certifications & Training** — OCI 2025 AI Foundations Associate, NPTEL Python (Elite 65%), and Sofcon AI & ML workshop.
 10. **Resume** — Dedicated download CTA banner.
 11. **Contact & Footer** — Direct verified contact links (Email, LinkedIn, GitHub, Phone) and interactive mailto contact form.
